@@ -30,14 +30,14 @@
     3.  Как можно изменить содержимое элемента DOM с помощью JavaScript после его выборки?
         Изменение содержимого элемента DOM возможно, обновлением его свойств
 
-        // Прмер изменения свойств элемента в моём коде
+        ```// Прмер изменения свойств элемента в моём коде
         function ShowTransactionData(transaction) {
             const dataContainer = document.getElementById('transaction-data');
             console.log(dataContainer)
 
             // Изменение свойства textContent
             dataContainer.textContent = `ID: ${transaction.id}, Дата: ${transaction.date}, Сумма: ${transaction.amount}, Категория: ${transaction.category}, Описание: ${transaction.description}`;
-        }
+        }```
 
     4.  Как можно добавить новый элемент в DOM дерево с помощью JavaScript?
         // Пример создания и добавления элемента на страницу в моём коде
