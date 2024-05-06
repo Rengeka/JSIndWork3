@@ -79,7 +79,7 @@ function UpdateTotal(){
     const h1 = document.getElementById("total");
     h1.innerText = " Total : " + CountTotal();
 }
-const table = document.getElementById('transaction-table');
+const table = document.getEleФайmentById('transaction-table');
 
 
 /**
@@ -87,8 +87,6 @@ const table = document.getElementById('transaction-table');
  */
 table.addEventListener('click', (event) => {
     const id = event.target.closest("tr").id;
-    console.log(id);
-
     ShowTransactionData(transactions.find((transaction) => transaction.id == id));
 });
 
